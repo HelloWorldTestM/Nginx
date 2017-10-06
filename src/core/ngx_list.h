@@ -9,8 +9,8 @@
 #define _NGX_LIST_H_INCLUDED_
 
 
-#include <ngx_config.h>
-#include <ngx_core.h>
+#include "ngx_config.h"
+#include "ngx_core.h"
 
 
 typedef struct ngx_list_part_s  ngx_list_part_t;
