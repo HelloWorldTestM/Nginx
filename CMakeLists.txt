@@ -1,7 +1,19 @@
 cmake_minimum_required(VERSION 3.7)
 project(Nginx)
 
-set(CMAKE_CXX_STANDARD 11)
+include_directories(/home/work/Desktop/project/Nginx/src/core/)
+include_directories(/home/work/Desktop/project/Nginx/src/event/)
+include_directories(/home/work/Desktop/project/Nginx/src/http/)
+include_directories(/home/work/Desktop/project/Nginx/src/mail/)
+include_directories(/home/work/Desktop/project/Nginx/src/misc/)
+include_directories(/home/work/Desktop/project/Nginx/src/os/)
+include_directories(/home/work/Desktop/project/Nginx/src/stream/)
+include_directories(/home/work/Desktop/project/Nginx/objs/)
+include_directories(/home/work/Desktop/project/Nginx/src/os/unix/)
+include_directories(/home/work/Desktop/project/Nginx/src/http/modules)
+include_directories(/usr/local/include/)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lvirt")   # 添加编译选项参数，不需要加的话省略这行
 
 set(SOURCE_FILES
         myModule/ngx_http_hello_world_module.c

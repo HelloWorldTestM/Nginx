@@ -334,7 +334,7 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
 	objs/src/http/modules/ngx_http_upstream_zone_module.o \
 	objs/ngx_modules.o \
-	-ldl -lpthread -lcrypt -lpcre -lcrypto -lcrypto -lz \
+	-ldl -lpthread -lcrypt -lpcre -lz \
 	-Wl,-E
 	
 

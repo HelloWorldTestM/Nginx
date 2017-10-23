@@ -1,7 +1,7 @@
 #define NGX_CONFIGURE ""
 
 #ifndef NGX_COMPILER
-#define NGX_COMPILER  "gcc 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) "
+#define NGX_COMPILER  "gcc 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) "
 #endif
 
 
@@ -76,7 +76,7 @@
 
 
 #ifndef NGX_CPU_CACHE_LINE
-#define NGX_CPU_CACHE_LINE  32
+#define NGX_CPU_CACHE_LINE  64
 #endif
 
 
@@ -174,7 +174,7 @@
 
 
 #ifndef NGX_PTR_SIZE
-#define NGX_PTR_SIZE  4
+#define NGX_PTR_SIZE  8
 #endif
 
 
@@ -189,12 +189,12 @@
 
 
 #ifndef NGX_MAX_SIZE_T_VALUE
-#define NGX_MAX_SIZE_T_VALUE  2147483647
+#define NGX_MAX_SIZE_T_VALUE  9223372036854775807LL
 #endif
 
 
 #ifndef NGX_SIZE_T_LEN
-#define NGX_SIZE_T_LEN  (sizeof("-2147483648") - 1)
+#define NGX_SIZE_T_LEN  (sizeof("-9223372036854775808") - 1)
 #endif
 
 
@@ -209,17 +209,17 @@
 
 
 #ifndef NGX_TIME_T_SIZE
-#define NGX_TIME_T_SIZE  4
+#define NGX_TIME_T_SIZE  8
 #endif
 
 
 #ifndef NGX_TIME_T_LEN
-#define NGX_TIME_T_LEN  (sizeof("-2147483648") - 1)
+#define NGX_TIME_T_LEN  (sizeof("-9223372036854775808") - 1)
 #endif
 
 
 #ifndef NGX_MAX_TIME_T_VALUE
-#define NGX_MAX_TIME_T_VALUE  2147483647
+#define NGX_MAX_TIME_T_VALUE  9223372036854775807LL
 #endif
 
 
@@ -358,31 +358,6 @@
 #endif
 
 
-#ifndef NGX_OPENSSL_MD5
-#define NGX_OPENSSL_MD5  1
-#endif
-
-
-#ifndef NGX_HAVE_OPENSSL_MD5_H
-#define NGX_HAVE_OPENSSL_MD5_H  1
-#endif
-
-
-#ifndef NGX_HAVE_MD5
-#define NGX_HAVE_MD5  1
-#endif
-
-
-#ifndef NGX_HAVE_SHA1
-#define NGX_HAVE_SHA1  1
-#endif
-
-
-#ifndef NGX_HAVE_OPENSSL_SHA1_H
-#define NGX_HAVE_OPENSSL_SHA1_H  1
-#endif
-
-
 #ifndef NGX_ZLIB
 #define NGX_ZLIB  1
 #endif
@@ -469,6 +444,6 @@
 
 
 #ifndef NGX_GROUP
-#define NGX_GROUP  "nogroup"
+#define NGX_GROUP  "nobody"
 #endif
 

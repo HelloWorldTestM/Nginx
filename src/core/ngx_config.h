@@ -23,6 +23,7 @@
 
 
 #elif (NGX_LINUX)
+
 #include <ngx_linux_config.h>
 
 
@@ -75,9 +76,9 @@
 
 #endif
 
-typedef intptr_t        ngx_int_t;
-typedef uintptr_t       ngx_uint_t;
-typedef intptr_t        ngx_flag_t;
+typedef intptr_t ngx_int_t;
+typedef uintptr_t ngx_uint_t;
+typedef intptr_t ngx_flag_t;
 
 
 #define NGX_INT32_LEN   (sizeof("-2147483648") - 1)
@@ -130,3 +131,8 @@ typedef intptr_t        ngx_flag_t;
 
 
 #endif /* _NGX_CONFIG_H_INCLUDED_ */
+
+/** ggl 修改于2017.10.22*/
+//#ifndef NGX_THREADS
+//#define NGX_THREADS 1
+//#endif
