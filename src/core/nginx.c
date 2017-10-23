@@ -384,7 +384,7 @@ ngx_show_version_info(void)
             "Options:" NGX_LINEFEED
             "  -?,-h         : this help" NGX_LINEFEED
             "  -v            : show version and exit" NGX_LINEFEED
-            "  -V            : show version and configure options then exit"
+            "  -V            : show version and configure.sh options then exit"
                                NGX_LINEFEED
             "  -t            : test configuration and exit" NGX_LINEFEED
             "  -T            : test configuration, dump it and exit"
@@ -428,7 +428,7 @@ ngx_show_version_info(void)
 #endif
 #endif
 
-        ngx_write_stderr("configure arguments:" NGX_CONFIGURE NGX_LINEFEED);
+        ngx_write_stderr("configure.sh arguments:" NGX_CONFIGURE NGX_LINEFEED);
     }
 }
 
