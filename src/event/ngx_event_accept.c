@@ -8,6 +8,7 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 #include <ngx_event.h>
+#include <ws2tcpip.h>
 
 
 static ngx_int_t ngx_enable_accept_events(ngx_cycle_t *cycle);

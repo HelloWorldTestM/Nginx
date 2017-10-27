@@ -12,6 +12,8 @@ include_directories(./objs/)
 include_directories(./src/os/unix/)
 include_directories(./src/http/modules)
 include_directories(/usr/local/include/)
+include_directories(D:/information/GW/include/)
+#include_directories(D:\information\GW\include\ws2tcpip.h)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lvirt")   # 添加编译选项参数，不需要加的话省略这行
 
